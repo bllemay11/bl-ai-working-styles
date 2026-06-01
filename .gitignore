@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.bak
+
+# Claude Code per-user configuration
+.claude/current-user
+.claude/settings.local.json
