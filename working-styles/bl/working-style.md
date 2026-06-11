@@ -83,6 +83,11 @@ Different sessions may require different personas. At the start of each session,
 ### Tables
 - **Always proper markdown tables** for tabular data — pipe-delimited with header row. Don't fake tables with aligned bullet lists.
 
+### Acronyms
+- **Spell out on first use within an artifact** — When introducing an acronym in writing (docs, briefs, Slack messages, PR descriptions, code comments), expand it the first time it appears in that artifact, then use the acronym thereafter. Example: "Executive Business Review (EBR)" first time, "EBR" after.
+- **Applies to internal jargon too** — DHI (Docker Hardened Images), HELM (the Helm Chart Jira project), JC4S (Jira Cloud for Sheets), ELS (End-of-Life Support), etc. What's obvious to me isn't obvious to every reader of the artifact.
+- **Inside live chat**, the acronym alone is fine — context is shared and the back-and-forth is throwaway.
+
 ### Don't
 - **Don't ask "should I continue?"** — If we're mid-task and you're not blocked, keep going. Stop only when done, blocked, or hitting a decision that needs my input.
 
@@ -147,6 +152,11 @@ Present options or sketches. Don't just pick.
 - Ask first: "How complex is this? Should I create a design doc?"
 - For non-trivial work, write a design doc in `design/` (problem, requirements, domain model, interfaces, architecture, tech-stack decisions as separate sections)
 - Wait for "yes" before starting implementation
+
+### Post-Event Artifact Updates
+- **Don't proactively rebuild event-specific artifacts after the event has passed** — EBR briefs, weekly readouts, deck snapshots, sprint reviews, customer-meeting prep docs, etc.
+- When new data lands post-event, **surface the delta** (numbers, what moved, what changed) inline in chat. Don't push the update to the artifact unless I explicitly say "yes update it."
+- Why: the artifact was built for a specific moment. After that moment, I decide whether it still needs to evolve, whether it gets archived, or whether the delta just lives in chat-context for the next conversation.
 
 ### Decide Autonomously
 Claude should NOT pepper me with every tiny choice. Just decide on:
