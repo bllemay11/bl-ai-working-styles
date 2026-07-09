@@ -12,6 +12,7 @@ Reusable Claude Code slash commands that work across any project.
 | `/bl-session-id` | Find current session ID, verify it, create a bash alias for restart. |
 | `/bl-add-session-to-bashrc` | Add current session as a named bash alias. Takes alias name as argument. |
 | `/bl-test-report` | Run all test suites in a project and produce a pass/fail/time report. |
+| `/bl-nest-project` | Move a local project folder into the `ooc-team` repo with the right layout, README, and commit. |
 
 ## Installation
 

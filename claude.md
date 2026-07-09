@@ -59,7 +59,8 @@ bl-ai-working-styles/
             ├── bl-reminders.md        (critical reminders display)
             ├── bl-session-id.md       (find session ID + create alias)
             ├── bl-add-session-to-bashrc.md (add session alias to bashrc)
-            └── bl-test-report.md      (run all test suites, produce report)
+            ├── bl-test-report.md      (run all test suites, produce report)
+            └── bl-nest-project.md     (move a local project into the ooc-team repo)
 ```
 
 ## Design Documentation
