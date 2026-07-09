@@ -213,6 +213,18 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 - Don't suggest pushing after a commit
 - If a workflow requires pushing (e.g., to trigger CI), tell me and stop — let me push.
 
+### Pull Request Title Review
+- **Before opening any PR, surface the title for approval first** — Do NOT fire `gh pr create` (or the equivalent) without me having explicitly approved the proposed title.
+- Format the preview like this:
+  ```
+  Proposed PR title: <title>
+  Proposed PR body (first 3-5 bullets): <preview>
+  ```
+- Wait for explicit "go" / "ship it" / "looks good" — or a title edit — before running the command. On an edit, apply it and re-confirm.
+- Same rule for `gh pr edit --title` — if changing an existing PR's title, surface the new title first.
+- **Why:** PR titles are public and stick around in git/PR history. A too-terse or too-cute title can make future search painful, misrepresent scope, or leak internal detail. A 5-second review here beats a `gh pr edit --title` after the fact.
+- Doesn't apply to: commit messages (already handled fine), branch names (low visibility), or cosmetic post-creation body edits.
+
 ## Testing Patterns
 
 ### TDD Approach — Always
